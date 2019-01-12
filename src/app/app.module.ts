@@ -7,6 +7,8 @@ import {HomeComponent} from './home/home.component';
 import {TransferHttpCacheModule} from '@nguniversal/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material';
+import {NgxsModule} from '@ngxs/store';
+import {NgxsStoragePluginModule} from '@ngxs/storage-plugin';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,10 @@ import {MatButtonModule} from '@angular/material';
     ]),
     TransferHttpCacheModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    NgxsModule.forRoot([
+    ]),
+    NgxsStoragePluginModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
