@@ -4,6 +4,7 @@ import {Component} from '@angular/core';
   selector: 'app-root',
   template: `
   <div class="app-container">
+    <button mat-button color="primary">Click me!</button>
     <h1>Angular Universal Demo utilizing Angular & Angular CLI</h1>
     <nav class="nav-links">
       <a routerLink="/">Home</a>

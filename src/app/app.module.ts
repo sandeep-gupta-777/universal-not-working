@@ -5,6 +5,8 @@ import {RouterModule} from '@angular/router';
 import {AppComponent} from './app.component';
 import {HomeComponent} from './home/home.component';
 import {TransferHttpCacheModule} from '@nguniversal/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import {TransferHttpCacheModule} from '@nguniversal/common';
       { path: 'lazy/nested', loadChildren: './lazy/lazy.module#LazyModule'}
     ]),
     TransferHttpCacheModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
